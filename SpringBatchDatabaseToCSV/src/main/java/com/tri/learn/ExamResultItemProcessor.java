@@ -14,9 +14,9 @@ public class ExamResultItemProcessor implements ItemProcessor<ExamResult, ExamRe
          * Only return results which are equal or more than 80%
          *
          */
-        if(result.getPercentage() < 80){
+        /*if(result.getPercentage() < 80){
             return null;
-        }
+        }*/
  
         return result;
     }
