@@ -13,7 +13,8 @@ public class MainApplication {
     @SuppressWarnings("resource")
     public static void main(String areg[]){
          
-        ApplicationContext context = new ClassPathXmlApplicationContext("spring-batch-context.xml");
+        /*ApplicationContext context = new ClassPathXmlApplicationContext("spring-batch-context.xml");*/
+    	ApplicationContext context = new ClassPathXmlApplicationContext("datawarehouse-prod-context.xml");
          
         JobLauncher jobLauncher = (JobLauncher) context.getBean("jobLauncher");
         Job job = (Job) context.getBean("examResultJob");

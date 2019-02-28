@@ -2,12 +2,12 @@ package com.tri.learn;
 
 import org.springframework.batch.item.ItemProcessor;
 
-import com.tri.learn.model.ExamResult;
+import com.tri.learn.model.DWNotifAttempt;
  
-public class ExamResultItemProcessor implements ItemProcessor<ExamResult, ExamResult>{
+public class ExamResultItemProcessor implements ItemProcessor<DWNotifAttempt, DWNotifAttempt>{
  
     @Override
-    public ExamResult process(ExamResult result) throws Exception {
+    public DWNotifAttempt process(DWNotifAttempt result) throws Exception {
         System.out.println("Processing result :"+result);
  
         /*

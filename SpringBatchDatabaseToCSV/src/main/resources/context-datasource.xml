@@ -5,9 +5,12 @@
 
 	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
-		<property name="url" value="jdbc:mysql://localhost:3306/spring_batch_db_to_csv" />
+		<!-- <property name="url" value="jdbc:mysql://localhost:3306/spring_batch_db_to_csv" />
 		<property name="username" value="spring_batch_user" />
-		<property name="password" value="dsfkjwelfj834948jkfdsjf" />
+		<property name="password" value="dsfkjwelfj834948jkfdsjf" /> -->
+		<property name="url" value="jdbc:mysql://103.89.3.23/kokatto_dw" />
+		<property name="username" value="backfiller" />
+		<property name="password" value="QW8XGaV!GwF28Rm" />
   	</bean>
 
 </beans>
